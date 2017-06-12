@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Login : MonoBehaviour {
+public class Login : BaseUI {
 
-	// Use this for initialization
+    // Use this for initialization
+    private Button btn_Start;
+    private Button btn_Shop;
+    private Button btn_Exit;
+   
 	void Start () {
 		
 	}
@@ -13,4 +18,13 @@ public class Login : MonoBehaviour {
 	void Update () {
 		
 	}
+    public override void Init()
+    {
+        base.Init();
+    }
+    public override void Destroy()
+    {
+        base.Destroy();
+       
+    }
 }

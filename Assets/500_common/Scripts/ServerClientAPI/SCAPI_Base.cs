@@ -1,12 +1,7 @@
 using UnityEngine;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using LitJson;
-using TapjoyUnity;
-using System.Linq;
-using Mobcast.MNTG;
+
+
 
 //------------------------------------------------------------------------------------
 // サーバー通信用APIベース
@@ -23,7 +18,7 @@ public abstract class SCAPI_Base {
 	/// <summary>OnSuccessを一度だけ実行します</summary>
 	public void OnSuccessOneShot ()
 	{
-		OnSuccess.Exec();
+		OnSuccess();
 		OnSuccess = null;
 		OnError   = null;
 	}
@@ -31,7 +26,7 @@ public abstract class SCAPI_Base {
 	/// <summary>OnErrorを一度だけ実行します</summary>
 	public void OnErrorOneShot ()
 	{
-		OnError.Exec();
+		OnError();
 		OnError   = null;
 		OnSuccess = null;
 	}

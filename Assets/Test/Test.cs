@@ -32,8 +32,8 @@ public class Test : MonoBehaviour {
             Debug.Log(Data.NAME);
             Debug.Log(Data.AGE);
             Debug.Log(res);
-            
-            
+
+            UiManager.Instance.Add_Low("Login");
         }
     }
 }
